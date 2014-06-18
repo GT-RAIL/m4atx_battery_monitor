@@ -1,2 +1,0 @@
-/usr/bin/ar cr libm4api.a  CMakeFiles/m4api-static.dir/m4api.c.o
-/usr/bin/ranlib libm4api.a

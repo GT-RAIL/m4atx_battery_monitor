@@ -1,6 +1,0 @@
-/usr/local/bin/m4ctl
-/usr/local/lib/libm4api.so.0.1
-/usr/local/lib/libm4api.so
-/usr/local/include/m4api/m4api.h
-/usr/local/lib/libm4api.a
-/usr/local/lib/pkgconfig/m4api.pc

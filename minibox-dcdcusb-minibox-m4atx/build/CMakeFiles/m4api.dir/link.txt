@@ -1,1 +1,0 @@
-/usr/bin/cc  -fPIC    -shared -Wl,-soname,libm4api.so.0.1 -o libm4api.so.0.1 CMakeFiles/m4api.dir/m4api.c.o -lusb 
