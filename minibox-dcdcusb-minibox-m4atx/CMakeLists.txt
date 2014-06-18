@@ -7,6 +7,7 @@ option(enable_maintainer "Enables the maintainer CFLAGS (-Wall -Werror)" OFF)
 if(enable_maintainer)
 	add_definitions(-Wall -Werror)
 endif(enable_maintainer)
+add_definitions(-std=c99)
 include(FindPkgConfig)
 pkg_check_modules(lusb REQUIRED libusb)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/m4api.pc.in

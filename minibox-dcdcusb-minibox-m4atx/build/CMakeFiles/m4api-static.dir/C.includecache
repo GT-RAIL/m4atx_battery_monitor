@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cmdunkers/codebase/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/m4api.c
+stdio.h
+-
+usb.h
+-
+m4api.h
+/home/cmdunkers/codebase/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/m4api.h
+
+/home/cmdunkers/codebase/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/m4api.h
+

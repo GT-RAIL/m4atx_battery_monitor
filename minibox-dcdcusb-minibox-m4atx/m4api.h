@@ -23,9 +23,9 @@
 extern "C" {
 #endif // __cplusplus
 
-const int M4API_VERSION_MAJOR = @m4api_VERSION_MAJOR@;
-const int M4API_VERSION_MINOR = @m4api_VERSION_MINOR@;
-const float M4API_VERSION = @m4api_VERSION@;
+const int M4API_VERSION_MAJOR = 0;
+const int M4API_VERSION_MINOR = 1;
+const float M4API_VERSION = 0.1;
 
 enum m4Type {
   M4_VLT_12_11,
