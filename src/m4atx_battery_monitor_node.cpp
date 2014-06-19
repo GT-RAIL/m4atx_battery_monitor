@@ -38,53 +38,30 @@ int main (int argc, char **argv)
 	ros::Rate loop_rate(diag_frequency);
 	while (ros::ok()) 
 	{
-		char diagBuf[24];
-		char repeat = argc >= 3;
+		m4Diagnostics diag;
+		m4atx_battery_monitor::PowerReading reading;
 
-		if (repeat) {
-		  for (;;) {
-			if (m4FetchDiag(dev, diagBuf) < 0) {
-			  puts("ERROR: cannot fetch diagnostics");
-		  return -1;
-		}
-
-		printf("-- %d\n", time(NULL));	
-		m4PrintDiag(diagBuf);
-
-		sleep(1);
-		  }
-		} else {
-		  if (m4FetchDiag(dev, diagBuf) < 0) {
-			puts("ERROR: cannot fetch diagnostics");
+		if (m4GetDiag(dev, &diag)) 
+		{
+			perror("Reading from M4-ATX");
 			return -1;
-		  }
-
-		  m4PrintDiag(diagBuf);
 		}
-		//m4Diagnostics diag;
-		//m4atx_battery_monitor::PowerReading reading;
 
-		//if (m4GetDiag(dev, &diag)) 
-		//{
-			//perror("Reading from M4-ATX");
-			//return -1;
-		//}
+		reading.volts_read.push_back(diag.vin);
+		reading.volts_read.push_back(diag.v12);
+		reading.volts_read.push_back(diag.v5);
+		reading.volts_read.push_back(diag.v33);
 
-		//reading.volts_read.push_back(diag.vin);
-		//reading.volts_read.push_back(diag.v12);
-		//reading.volts_read.push_back(diag.v5);
-		//reading.volts_read.push_back(diag.v33);
+		reading.volts_full.push_back(input_nominal);
+		reading.volts_full.push_back(12.0);
+		reading.volts_full.push_back(5.0);
+		reading.volts_full.push_back(3.3);
 
-		//reading.volts_full.push_back(input_nominal);
-		//reading.volts_full.push_back(12.0);
-		//reading.volts_full.push_back(5.0);
-		//reading.volts_full.push_back(3.3);
+		reading.temperature.push_back(diag.temp);
 
-		//reading.temperature.push_back(diag.temp);
+		reading.header.stamp = ros::Time::now();
 
-		//reading.header.stamp = ros::Time::now();
-
-		//diag_pub.publish(reading);
+		diag_pub.publish(reading);
 
 		loop_rate.sleep();
 	}
