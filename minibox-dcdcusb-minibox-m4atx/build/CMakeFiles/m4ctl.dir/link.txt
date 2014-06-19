@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/m4ctl.dir/m4ctl.c.o  -o m4ctl -rdynamic libm4api.so.0.1 -lusb -Wl,-rpath,/home/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/build: 
