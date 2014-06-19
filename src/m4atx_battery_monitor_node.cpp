@@ -54,6 +54,8 @@ int main (int argc, char **argv)
 		reading.volts_read_value.push_back(diag.v5);
 		reading.volts_read_item.push_back("3.3V");
 		reading.volts_read_value.push_back(diag.v33);
+		reading.volts_read_item.push_back("VIGN");
+		reading.volts_read_value.push_back(diag.vign);
 		
 		reading.volts_full_item.push_back("VIN");
 		reading.volts_full_value.push_back(input_nominal);
