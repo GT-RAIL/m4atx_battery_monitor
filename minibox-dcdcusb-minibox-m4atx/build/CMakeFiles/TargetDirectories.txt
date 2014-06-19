@@ -1,3 +1,0 @@
-/home/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/build/CMakeFiles/m4api.dir
-/home/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/build/CMakeFiles/m4api-static.dir
-/home/cmdunkers/catkin_ws/src/m4atx_battery_monitor/minibox-dcdcusb-minibox-m4atx/build/CMakeFiles/m4ctl.dir
