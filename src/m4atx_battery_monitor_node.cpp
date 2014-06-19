@@ -46,16 +46,23 @@ int main (int argc, char **argv)
 			perror("Reading from M4-ATX");
 			return -1;
 		}
-
-		reading.volts_read.push_back(diag.vin);
-		reading.volts_read.push_back(diag.v12);
-		reading.volts_read.push_back(diag.v5);
-		reading.volts_read.push_back(diag.v33);
-
-		reading.volts_full.push_back(input_nominal);
-		reading.volts_full.push_back(12.0);
-		reading.volts_full.push_back(5.0);
-		reading.volts_full.push_back(3.3);
+		reading.volts_read_item.push_back("VIN")
+		reading.volts_read_value.push_back(diag.vin);
+		reading.volts_read_item.push_back("12V")
+		reading.volts_read_value.push_back(diag.v12);
+		reading.volts_read_item.push_back("5V")
+		reading.volts_read_value.push_back(diag.v5);
+		reading.volts_read_item.push_back("3.3V")
+		reading.volts_read_value.push_back(diag.v33);
+		
+		reading.volts_full_item.push_back("VIN")
+		reading.volts_full_value.push_back(input_nominal);
+		reading.volts_full_item.push_back("12V")
+		reading.volts_full_value.push_back(12.0);
+		reading.volts_full_item.push_back("5V")
+		reading.volts_full_value.push_back(5.0);
+		reading.volts_full_item.push_back("3.3V")
+		reading.volts_full_value.push_back(3.3);
 
 		reading.temperature.push_back(diag.temp);
 
