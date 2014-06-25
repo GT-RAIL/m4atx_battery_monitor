@@ -1,3 +1,12 @@
 <launch>    
-    <node pkg="m4atx_battery_monitor" type="m4atx_battery_monitor_node" name="m4atx_battery_monitor_node" output="screen"/>
+    <arg name="diag_frequency" value="1.0" />
+    <arg name="input_nominal" value="13.8" />
+    <arg name="battery_dead_voltage" value="10.5" />
+    
+    <node pkg="m4atx_battery_monitor" type="m4atx_battery_monitor_node" name="m4atx_battery_monitor_node" output="screen">
+        <param name="diag_frequency" type="double" value="$(arg diag_frequency)" />
+        <param name="input_nominal" type="double" value="$(arg input_nominal)" />
+        <param name="battery_dead_voltage" type="double" value="$(arg battery_dead_voltage)" />
+    </node
+
 </launch>
