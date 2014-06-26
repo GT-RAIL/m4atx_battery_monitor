@@ -7,6 +7,6 @@
         <param name="diag_frequency" type="double" value="$(arg diag_frequency)" />
         <param name="input_nominal" type="double" value="$(arg input_nominal)" />
         <param name="battery_dead_voltage" type="double" value="$(arg battery_dead_voltage)" />
-    </node
+    </node>
 
 </launch>

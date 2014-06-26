@@ -19,6 +19,14 @@
 #ifndef M4API_H
 #define M4API_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
+const int M4API_VERSION_MAJOR = 0;
+const int M4API_VERSION_MINOR = 1;
+const float M4API_VERSION = 0.1;
+
 enum m4Type {
   M4_VLT_12_11,
   M4_VLT_12_07,
@@ -115,6 +123,11 @@ struct m4Diagnostics {
   float temp;
 };
 
+struct m4Version {  
+  int major;
+  int minor;
+};
+
 extern struct m4DiagField m4DiagFields[];
 extern struct m4ConfigField m4ConfigFields[];
 extern char* m4TypeDescs[];
@@ -154,5 +167,9 @@ void m4PrintDiag(char *buf);
 
 /* Find the m4ConfigField of the given name */
 int m4ConfigField(char const *name);
+
+#ifdef __cplusplus
+}
+#endif	// __cplusplus
 
 #endif
