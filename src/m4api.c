@@ -19,7 +19,7 @@
 #include <stdio.h>
 #include <usb.h>
 
-#include "m4api.h"
+#include "m4atx_battery_monitor/m4api.h"
 
 static size_t m4TypeLengths[13] = {
  1, 1, 1, 1, 1, 1, 1, 2,
