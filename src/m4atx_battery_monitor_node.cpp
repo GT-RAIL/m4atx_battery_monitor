@@ -108,7 +108,10 @@ int main (int argc, char **argv)
 		
 		loop_rate.sleep();
 	}
-
+	
+	//close the usb handle
+	usb_close(dev);	
+	
 	return 0;
 }
 
