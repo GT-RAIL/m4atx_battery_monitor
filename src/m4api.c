@@ -35,7 +35,7 @@ static float m4TypeConversionsV1[13] = {
 
 
 static float m4TypeConversionsV2[13] = {
- 0.1552, 0.1165, 0.0389, 0.0195,
+ 0.1572, 0.1165, 0.0389, 0.0195,
  1.0, 1.0, 1.0, 1.0,
  10.0, 10.0, 1.0, 1.0,
  1.0
