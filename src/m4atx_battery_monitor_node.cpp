@@ -6,6 +6,7 @@
 #include "ros/ros.h"
 #include "m4atx_battery_monitor/PowerReading.h"
 #include "std_msgs/String.h"
+#include <usb.h>
 
 extern "C" {
   #include "m4atx_battery_monitor/m4api.h"
