@@ -4,7 +4,7 @@ m4atx_battery_monitor [![Build Status](https://api.travis-ci.org/WPI-RAIL/m4atx_
 #### Battery Monitor for the M4-ATX Power Module
 For full documentation, see [the ROS wiki](http://ros.org/wiki/m4atx_battery_monitor).
 
-The node reads in and publishes the status of the battery supply. It also verbalizes the battery low warnings using cob_sound.
+The node reads in and publishes the status of the battery supply. It also verbalizes the battery low warnings using `espeak`.
 
 ### Setup
 `$ lsusb`

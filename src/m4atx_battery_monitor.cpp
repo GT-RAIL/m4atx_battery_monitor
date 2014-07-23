@@ -10,7 +10,6 @@
 
 #include <ros/ros.h>
 #include <m4atx_battery_monitor/PowerReading.h>
-#include <std_msgs/String.h>
 #include <usb.h>
 
 extern "C"
@@ -53,7 +52,6 @@ int main(int argc, char **argv)
 
   // setup the publishers
   ros::Publisher diag_pub = node.advertise<m4atx_battery_monitor::PowerReading>("battery_status_m4atx", 1);
-  ros::Publisher sound_pub = node.advertise<std_msgs::String>("say", 1);
 
   // main publish loop
   ros::Rate loop_rate(diag_frequency);
@@ -102,24 +100,20 @@ int main(int argc, char **argv)
     // check if we need to say something to the user
     if (ros::Time::now() > next_check)
     {
-      std_msgs::String message;
       if (soc < 5)
       {
         next_check = ros::Time::now() + ros::Duration(5.0 * 60); //5 min
-        message.data = "Computer battery has 5 percent remaining";
-        sound_pub.publish(message);
+        system("espeak \"Computer battery has 5 percent remaining.\"");
       }
       else if (soc < 10)
       {
         next_check = ros::Time::now() + ros::Duration(10.0 * 60); //10 min
-        message.data = "Computer battery has 10 percent remaining";
-        sound_pub.publish(message);
+        system("espeak \"Computer battery has 10 percent remaining.\"");
       }
       else if (soc < 20)
       {
         next_check = ros::Time::now() + ros::Duration(15.0 * 60); //15 min
-        message.data = "Computer battery has 20 percent remaining";
-        sound_pub.publish(message);
+        system("espeak \"Computer battery has 20 percent remaining.\"");
       }
       else
       {
