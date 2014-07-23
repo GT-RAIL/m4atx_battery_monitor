@@ -10,5 +10,3 @@ DEV_NUM=$(((lsusb | grep "04d8:d001 Microchip Technology, Inc.") | awk '{print $
 
 LOCATION="/dev/bus/usb/${BUS_NUM}/${DEV_NUM}"
 chmod a+rw ${LOCATION}
-
-

@@ -5,8 +5,8 @@ project(m4atx_battery_monitor)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  message_generation  
   roscpp
-  message_generation
   std_msgs
 )
 
