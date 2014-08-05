@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>m4atx_battery_monitor</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>Battery Monitor for the M4-ATX Power Module</description>
 
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
