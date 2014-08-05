@@ -2,8 +2,12 @@
 Changelog for package m4atx_battery_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2014-08-05)
+------------------
+* moved .sh to .bash
+* permissions script added to install
+* Contributors: Russell Toris
+
 * usb dev added
 * comments
 * moved script
