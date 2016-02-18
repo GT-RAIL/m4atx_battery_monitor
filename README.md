@@ -1,4 +1,4 @@
-m4atx_battery_monitor [![Build Status](https://api.travis-ci.org/WPI-RAIL/m4atx_battery_monitor.png)](https://travis-ci.org/WPI-RAIL/m4atx_battery_monitor)
+m4atx_battery_monitor [![Build Status](https://api.travis-ci.org/GT-RAIL/m4atx_battery_monitor.png)](https://travis-ci.org/GT-RAIL/m4atx_battery_monitor)
 =====================
 
 #### Battery Monitor for the M4-ATX Power Module
