@@ -5,7 +5,7 @@
  *
  * \author Ken Tossell <ktossell@umd.edu>
  * \author Chris Dunkers, WPI - cmdunkers@wpi.edu
- * \author Russell Toris, WPI - rctoris@wpi.edu
+ * \author Russell Toris, WPI - russell.toris@gmail.com
  */
 
 #include <ros/ros.h>

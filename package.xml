@@ -4,11 +4,10 @@
   <version>0.0.2</version>
   <description>Battery Monitor for the M4-ATX Power Module</description>
 
-  <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
   <maintainer email="dekent@gatech.edu">David Kent</maintainer>
   <author email="ktossell@umd.edu">Ken Tossell</author>
   <author email="cmdunkers@wpi.edu">Chris Dunkers</author>
-  <author email="rctoris@wpi.edu">Russell Toris</author>
+  <author email="russell.toris@gmail.com">Russell Toris</author>
 
   <license>LGPL</license>
   
